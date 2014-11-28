@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Limbo | Marist College</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/limbo_styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="lost.html">Lost Something</a>
+                    </li>
+                    <li>
+                        <a href="found.html">Found Something</a>
+                    </li>
+                    <li>
+                        <a href="search.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="admins.html">Admins</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>What'd ya find?</h1>
+            <h2>Thanks for being a good samaritan!  Please begin by filling out some information about the item you found below.</h2>
+        </header>
+
+        <form action="iprints.php" method="POST">
+        <table>
+            <tr>
+                <td>What item(s) did you find?</td><td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Please provide any other descriptive information about the found item(s) that may be helpful in identifying it (eg. color, model, size, etc).</td><td><input type="text" name="price"></td>
+            </tr>
+        </table>
+        </form>
+        <form action="found-1.html">    
+            <p><input type="submit" value="Continue"></p>
+        </form>
+    </body>
+</html>

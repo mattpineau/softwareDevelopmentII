@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <title>Limbo | Marist College</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/limbo_styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="lost.html">Lost Something</a>
+                    </li>
+                    <li>
+                        <a href="found.html">Found Something</a>
+                    </li>
+                    <li>
+                        <a href="search.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="admins.html">Admins</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Search for your Stuff</h1>
+            <h2>If you lost something, you're in luck; this is the place to report it!</h2>
+                
+                <?php
+                    # Connect to MySQL server and the database
+                    require( 'includes/connect_db.php' ) ;
+
+                    # Includes these helper functions
+                    require( 'includes/helpers.php' ) ;
+                
+                    # Show the records
+                    show_link_records($dbc);
+
+                    # Close the connection
+                    mysqli_close( $dbc ) ;
+                ?>
+        </header>
+        <table>
+            <tr>
+                <td>Filter by Date:</td>
+                <td>
+                    <select name="Options">
+                        <option>3 Days</option>
+                        <option>7 Days</option>
+                        <option>30 Days</option>
+                        <option>All Time</option>
+                </td>
+            </tr>
+            <tr>
+                <td>Filter by Status:</td>
+                <td>
+                    <select name="Options">
+                    <option>Both</option>
+                    <option>Lost</option>
+                    <option>Found</option>
+                </td>
+            </tr>
+            <tr>
+                <td>Filter by Location:</td>
+                <td>
+                    <select name="Options"></select>    
+                </td>
+            </tr>
+        </table>
+        
+    
+    </body>
+</html>

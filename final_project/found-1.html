@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Limbo | Marist College</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/limbo_styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="lost.html">Lost Something</a>
+                    </li>
+                    <li>
+                        <a href="found.html">Found Something</a>
+                    </li>
+                    <li>
+                        <a href="search.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="admins.html">Admins</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>What'd ya find?</h1>
+            <h2>Continue by providing us with where and about when you found it.</h2>
+        </header>
+
+        <form action="iprints.php" method="POST">
+        <table>
+            <tr>
+                <td>Pick a place on campus where you found the item(s).</td><td>
+                    <select name="Action">Location</select></td>
+            </tr>
+            <tr>
+                <td>About when did you find it? (Okay to approximate)</td>
+                <td>
+                    <select name="Action"> Month </select> / 
+                    <select name="Action"> Day </select> / 
+                    <select name="Action"> Year </select>
+                </td>
+            </tr>
+        </table>
+        </form>        
+        <p>
+            <form action="found.html" style="inline">
+                <input type="submit" value="Back">
+            </form>
+            <form action="found-2.html" style="inline">    
+                <input type="submit" value="Continue">
+            </form>
+        </p>
+
+    </body>
+</html>

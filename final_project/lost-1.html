@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Limbo | Marist College</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/limbo_styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="lost.html">Lost Something</a>
+                    </li>
+                    <li>
+                        <a href="found.html">Found Something</a>
+                    </li>
+                    <li>
+                        <a href="search.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="admins.html">Admins</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>So you lost something huh?</h1>
+            <h2>Continue by providing some information as to where you may have lost it (if you can remember).</h2>
+        </header>
+
+        <form action="iprints.php" method="POST">
+        <table>
+            <tr>
+                <td>Where on campus might you have lost your item?</td><td>
+                    <select name="Action">Location</select></td>
+            </tr>
+            <tr>
+                <td>About when was the item lost? (Okay to approximate)</td>
+                <td>
+                    <select name="Action"> Month </select> / 
+                    <select name="Action"> Day </select> / 
+                    <select name="Action"> Year </select>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <input type="submit" value="Back">
+            <input type="submit" value="Continue">
+        </p>
+        </form>
+    </body>
+</html>
